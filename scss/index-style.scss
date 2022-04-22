@@ -41,8 +41,8 @@ header {
 
             a {
                 @include principal-btn;
-                position: absolute;
-                top: 60%;
+                position: relative;
+                top: -85px;
                 animation: cta-btn-anim infinite 12s;
             }
 

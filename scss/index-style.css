@@ -368,9 +368,6 @@ main #section-6 .partners a img {
   header .first-page .hero-top > p {
     width: 65%;
   }
-  header .first-page .rs-header {
-    margin-bottom: 2%;
-  }
 
   main .article-btn {
     justify-content: flex-start !important;
@@ -388,6 +385,7 @@ main #section-6 .partners a img {
   }
   header .first-page .rs-header {
     left: 8% !important;
+    top: -4vh !important;
   }
   header .first-page .rs-header :nth-child(2) {
     margin-top: 3%;

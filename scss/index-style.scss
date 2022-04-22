@@ -207,10 +207,6 @@ main {
             .hero-top>p {
                 width: 65%;
             }
-
-            .rs-header {
-                margin-bottom: 2%;
-            }
         }
     }
 
@@ -241,6 +237,7 @@ main {
 
             .rs-header {
                 left: 8% !important;
+                top: -4vh!important;
 
                 :nth-child(2) {
                     margin-top: 3%;

@@ -1,0 +1,335 @@
+@import "variables";
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'roboto';
+    font-size: 16px;
+    line-height: 1.4;
+    color: $darkBlue;
+    background-color: $whity;
+    background-image: url(../images/bkg/body-bkg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    h1 {
+        font-family: 'UpperEastSide';
+        font-size: 90px;
+        font-weight: initial;
+        line-height: 1;
+    }
+
+    h2 {
+        font-family: 'Roboto';
+        font-size: 26px;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+
+    .sm-typo {
+        // boutons et nav
+        font-size: 14px;
+    }
+
+    .xsm-typo {
+        // affordance
+        font-size: 10px;
+    }
+
+    a,
+    button {
+        color: $darkBlue;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    header {
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 56px;
+            @include bloc-shadow;
+            position: fixed;
+            z-index: 100;
+            @include linear-blue;
+
+            .nav-container {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                padding: 0 20px;
+
+                .homeLink {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+                    align-items: center;
+                    padding-bottom: 0.15em;
+                    color: $whity;
+
+                    img {
+                        width: 2.3em;
+                        display: flex;
+                    }
+                }
+
+                a p,
+                button {
+                    margin: 3px 0 0;
+                }
+
+                // titres d'affordance
+
+                .burger {
+                    border-color: transparent;
+                    background: transparent;
+                    padding: 0.15em;
+                    color: $whity;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .burgerIcon {
+                        padding-bottom: 0.1em;
+                        font-size: 2em;
+                    }
+
+                    .closeIcon {
+                        display: none;
+                        padding-bottom: 0.1em;
+                        font-size: 2em;
+                    }
+
+                    p {
+                        margin: 3px 0 0;
+                    }
+                }
+
+                .top-nav-ul {
+                    position: fixed;
+                    transform: translateX(-101%);
+                    transition: transform 0.2s;
+                    top: 42px;
+                    left: 0;
+                    right: 20%;
+                    z-index: 99;
+                    background: $whity;
+                    padding: 2em;
+                    height: 95vh;
+                    @include bloc-shadow;
+
+                    .top-nav-li {
+                        font-size: 1em;
+                        overflow: hidden;
+                        height: 2.5em;
+
+                        .top-nav-link {
+                            color: $darkBlue;
+
+                            &:hover {
+                                @include link-hover;
+                            }
+                        }
+                    }
+
+                    .top-nav-li.drop {
+                        .dropdown-menu {
+                            padding-top: 1.15em;
+                            display: none;
+                        }
+
+                        &:hover {
+                            height: 8em;
+                            overflow: visible;
+
+                            .dropdown-menu {
+                                display: block;
+                                animation: apparitionSousMenu 1s forwards;
+                                position: fixed;
+                                margin: 0em 1em;
+                                padding: 0em;
+
+                                .dropdownLi {
+                                    padding: 0.5em 0.5em 0em 0em;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .showMenu {
+                    transform: translateX(0);
+                }
+            }
+        }
+
+        .hero-top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            background-image: url(../images/bkg/header-wave2.svg);
+            background-size: cover;
+            background-position: bottom 0% right 50%;
+            background-repeat: no-repeat;
+            color: $whity;
+        }
+    }
+
+    .contact-bubble {
+        @include contact-round-btn;
+        position: fixed;
+        right: 15px;
+        bottom: 40px;
+
+        p {
+            margin-top: -3px;
+            margin-bottom: 3px;
+        }
+
+        img {
+            margin-bottom: 3px;
+        }
+    }
+
+    #top-btn {
+        @include top-round-btn;
+        position: fixed;
+        bottom: 85px;
+        right: 15px;
+
+        i {
+            padding-bottom: 3px;
+        }
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 15px;
+        margin-top: 130px;
+        @include bloc-shadow;
+        background-color: $whity;
+
+        h2 {
+            font-weight: initial;
+            margin: 0.5em 0;
+            font-family: 'UpperEastSide';
+            text-transform: capitalize;
+            font-size: 70px;
+        }
+
+        img {
+            margin: 0 10px;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        .footer-links {
+            margin-bottom: 1em;
+            margin-top: 0.5em;
+
+            a {
+                display: block;
+                margin: 1em auto;
+                width: fit-content;
+
+                &:hover {
+                    @include link-hover;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:1000px) {
+
+    header {
+        nav {
+            padding-left: 1em;
+            padding-right: 1.5em !important;
+
+            .nav-container {
+                width: 75% !important;
+            }
+
+            .burger {
+                display: none !important;
+            }
+
+            .top-nav-ul {
+                position: relative !important;
+                transform: translateX(0%) !important;
+                display: flex !important;
+                top: auto !important;
+                background: transparent !important;
+                padding: 0em !important;
+                justify-content: flex-end;
+                height: 1em !important;
+                box-shadow: none !important;
+
+                .top-nav-li {
+                    padding: 0em 0em 0em 2em !important;
+
+                    .top-nav-link {
+                        color: $whity !important;
+                    }
+                }
+
+                .top-nav-li.drop {
+                    &:hover {
+                        .dropdown-menu {
+                            margin: 1em 0em !important;
+                            padding: 0.5em 1em 1.6em !important;
+                            background: $lightIndexBkg;
+                            border-radius: 0.2em;
+
+                            .dropdownLi {
+                                padding-top: 1em !important;
+
+                                .dropdownLink {
+                                    &:hover {
+                                        color: $fireOrange;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .contact-bubble {
+            right: 8%!important;
+            bottom: 8%!important;
+        }
+    }
+    #top-btn {
+        right: 5.5%!important;
+        bottom: 12%!important;
+    }
+    main {
+        margin: auto;
+        width: 75%;
+    }
+}

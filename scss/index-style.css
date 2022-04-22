@@ -1,0 +1,450 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "UpperEastSide";
+  src: url(../polices/UpperEastSide.ttf) format("truetype");
+}
+@keyframes fairy-anim {
+  0% {
+    transform: translate(0.2em, 0.2em);
+  }
+  15% {
+    transform: translate(-0.2em, -0.3em);
+  }
+  25% {
+    transform: rotate(40deg) scale(1.1, 1.1);
+  }
+  30% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: translate(0.2em, 0.3em);
+  }
+  70% {
+    transform: translate(-0.3em, -0.2em);
+  }
+  100% {
+    transform: translate(0.2em, 0.2em);
+  }
+}
+@keyframes star-anim1 {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  65% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes star-anim2 {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes star-anim3 {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes star-anim4 {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes cta-btn-anim {
+  25% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.1, 1.1);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  90% {
+    transform: scale(1.1, 1.1);
+  }
+}
+header .first-page {
+  height: 100vh;
+  overflow: hidden;
+}
+header .first-page .hero-top {
+  height: 92vh;
+}
+header .first-page .hero-top .hero-title {
+  text-align: end;
+  color: #e1d201;
+}
+header .first-page .hero-top .hero-title h1 {
+  margin: 25px 0 0;
+}
+header .first-page .hero-top .hero-title p {
+  margin-top: -10px;
+}
+header .first-page .hero-top > p {
+  text-align: center;
+}
+header .first-page .hero-top .fairy {
+  opacity: 1;
+  margin: 40px 0 10px 235px;
+  width: 10em;
+  animation: fairy-anim 12s infinite forwards;
+}
+header .first-page .hero-top > img,
+header .first-page .hero-top .clic {
+  opacity: 0;
+  position: relative;
+}
+header .first-page .hero-top a {
+  display: flex;
+  background-color: #FEFEFE;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
+  width: 100px;
+  height: 95px;
+  position: absolute;
+  top: 65%;
+  animation: cta-btn-anim infinite 12s;
+}
+header .first-page .hero-top a:hover {
+  background-color: #f0502c;
+  color: #FEFEFE;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+header .first-page .hero-top .clic {
+  color: #f0502c;
+  transform: rotate(-12deg);
+  animation: star-anim4 12s infinite forwards;
+  top: -2em;
+  left: -5.5em;
+}
+header .first-page .hero-top .header-star1 {
+  width: 1em;
+  animation: star-anim1 12s infinite forwards;
+  top: 0.5em;
+  left: -6em;
+}
+header .first-page .hero-top .header-star2 {
+  width: 0.7em;
+  animation: star-anim2 12s infinite forwards;
+  top: -2.5em;
+  left: 5em;
+}
+header .first-page .hero-top .header-star3 {
+  width: 0.9em;
+  animation: star-anim3 12s infinite forwards;
+  top: 3em;
+  left: -4em;
+}
+header .first-page .hero-top .header-star4 {
+  width: 0.8em;
+  animation: star-anim4 12s infinite forwards;
+  top: -6.5em;
+  left: -0.5em;
+}
+header .first-page .rs-header {
+  position: absolute;
+  bottom: 5vh;
+  left: 15px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+header .first-page .rs-header a:hover {
+  transform: scale(1.1);
+}
+
+main {
+  padding: 0 20px;
+}
+main section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 30px 0;
+}
+main section article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 45vh;
+}
+main section article h2 {
+  margin: 25px 0 0;
+}
+main section article p {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  background-color: #FEFEFE;
+  margin: 25px 0px;
+}
+main section article .article-btn {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+main section article .article-btn .articleLink a {
+  display: flex;
+  width: 150px;
+  height: 42px;
+  background: #FEFEFE;
+  color: #29225a;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
+}
+main section article .article-btn .articleLink a:hover {
+  background-color: #f0502c;
+  color: #FEFEFE;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+main section article .article-btn .next-link a {
+  display: flex;
+  background-color: #29225a;
+  color: #FEFEFE;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
+  height: 42px;
+  width: 150px;
+  text-align: center;
+}
+main section article .article-btn .next-link a:hover {
+  background-color: #f0502c;
+  color: #FEFEFE;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+main section article .article-btn .next-link a img {
+  width: 20px;
+  padding-left: 3px;
+}
+main section video,
+main section > img {
+  width: 100%;
+  height: 40vh;
+  border-radius: 5px;
+  object-fit: cover;
+}
+main #section-6 {
+  display: flex;
+  flex-direction: column !important;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+main #section-6 h2 {
+  margin: 0;
+}
+main #section-6 .partners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main #section-6 .partners a {
+  width: 50%;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: center;
+}
+main #section-6 .partners a:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+main #section-6 .partners a img {
+  width: 70px;
+}
+
+@media screen and (min-width: 500px) {
+  header .first-page .hero-top > p {
+    width: 65%;
+  }
+  header .first-page .rs-header {
+    margin-bottom: 2%;
+  }
+
+  main .article-btn {
+    justify-content: flex-start !important;
+  }
+  main .article-btn .next-link {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header .first-page .hero-top > p {
+    width: 42%;
+  }
+  header .first-page .cta-bloc {
+    margin-top: -1.5em !important;
+  }
+  header .first-page .rs-header {
+    left: 8% !important;
+  }
+  header .first-page .rs-header :nth-child(2) {
+    margin-top: 3%;
+  }
+  header .first-page .rs-header :nth-child(3) {
+    margin-top: 6%;
+  }
+
+  main section:nth-child(2n) {
+    flex-direction: row-reverse !important;
+  }
+  main section {
+    flex-direction: row !important;
+    align-items: center;
+    padding: 30px 0 !important;
+  }
+  main section article {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 30px;
+    margin-top: 0 !important;
+    height: 75%;
+  }
+  main section article h2 {
+    margin: 0 !important;
+  }
+  main section article p {
+    -webkit-line-clamp: 11;
+  }
+  main section article .article-btn {
+    margin-bottom: 0 !important;
+  }
+  main section video,
+main section > img {
+    height: 75%;
+    width: 40%;
+    padding: 30px;
+    border-radius: 40px;
+  }
+  main #section-6 {
+    padding: 70px 36px 30px !important;
+  }
+  main #section-6 h2 {
+    width: 100%;
+    text-align: start;
+  }
+  main #section-6 .partners {
+    justify-content: left !important;
+  }
+  main #section-6 .partners a {
+    width: 25% !important;
+    height: 120px !important;
+  }
+  main #section-6 .partners a img {
+    width: 120px !important;
+  }
+}
+
+/*# sourceMappingURL=index-style.css.map */

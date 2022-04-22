@@ -1,0 +1,129 @@
+@import 'variables';
+
+header {
+    .hero-top {
+        height: 55vh;
+        overflow: hidden;
+
+        h1 {
+            padding-top: 20px;
+            text-align: center;
+            margin : 0
+        }
+
+        &>img {
+            position: relative;
+        }
+
+        .fairy {
+            width: 160px;
+            margin-bottom: 70px;
+            left: 150px;
+            top: 20px;
+        }
+
+        .cta-star1 {
+            width: 1em;
+            top: 10em;
+            left: -10em;
+        }
+
+        .cta-star2 {
+            width: 0.7em;
+            top: 13em;
+            left: -6em;
+        }
+
+        .cta-star3 {
+            width: 0.9em;
+            top: -16em;
+            left: -6em;
+        }
+
+        .cta-star4 {
+            width: 0.8em;
+            top: 0.5em;
+            left: 9.5em;
+        }
+    }
+}
+
+main {
+
+    section {
+        padding: 60px 20px 0;
+
+        .popUpError {
+            display: none;
+            padding: 1em;
+            margin-bottom: 1em;
+            color: $darkRed;
+            background-color: #ffc0cb3b;
+            border: solid 0.1em $darkRed;
+            border-radius: 3px;
+        }
+        .popUpSuccess {
+            display: none;
+            padding: 1em;
+            margin-bottom: 1em;
+            color: green;
+            background-color: #adffad3b;
+            border: solid 1px green;
+            border-radius: 3px;
+        }
+
+        form {
+            .formChamps {
+                padding: 0.5em 0em;
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                label {
+                    padding-bottom: 0.5em;
+                }
+                .clientContact {
+                    height: 2em;
+                    background-color: #f3f3f8;
+                    border: 1px solid $darkBlue;
+                    padding: 0.3em 0.5em;
+                    border-radius: 3px;
+                }
+                #formMsg {
+                    height: 15em;
+                    font-family: "roboto";
+                }
+            }
+            #formErreur {
+                color: $darkRed;
+            }
+            .submitButton {
+                border: 0.01em solid transparent;
+                @include blue-btn;
+                margin: 30px auto 0;    
+            }
+            
+        }
+    } 
+
+    section[id="details"] {
+        a {
+            text-decoration: none;
+            color: $fireOrange;
+            font-weight: normal;
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (min-width:1000px) {
+
+    section[id="details"] {
+        .address-bloc {
+            display: flex;
+            justify-content: space-between;
+            div {
+                width: 45%;
+            }
+        }
+    }
+}

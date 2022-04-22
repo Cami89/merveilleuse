@@ -238,12 +238,12 @@ header .first-page .hero-top .header-star3 {
 header .first-page .hero-top .header-star4 {
   width: 0.8em;
   animation: star-anim4 12s infinite forwards;
-  top: -6.5em;
+  top: -10em;
   left: -0.5em;
 }
 header .first-page .rs-header {
-  position: absolute;
-  bottom: 5vh;
+  position: relative;
+  top: -2vh;
   left: 15px;
   width: 150px;
   display: flex;

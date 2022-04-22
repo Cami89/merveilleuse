@@ -207,6 +207,16 @@ main {
             .hero-top>p {
                 width: 65%;
             }
+            .rs-header {
+                top: -2vh!important;
+                :nth-child(2) {
+                    margin-top: 3%;
+                }
+
+                :nth-child(3) {
+                    margin-top: 6%;
+                }
+            }
         }
     }
 
@@ -237,15 +247,7 @@ main {
 
             .rs-header {
                 left: 8% !important;
-                top: -4vh!important;
-
-                :nth-child(2) {
-                    margin-top: 3%;
-                }
-
-                :nth-child(3) {
-                    margin-top: 6%;
-                }
+                top: -5vh!important;
             }
         }
     }

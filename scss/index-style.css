@@ -368,6 +368,15 @@ main #section-6 .partners a img {
   header .first-page .hero-top > p {
     width: 65%;
   }
+  header .first-page .rs-header {
+    top: -2vh !important;
+  }
+  header .first-page .rs-header :nth-child(2) {
+    margin-top: 3%;
+  }
+  header .first-page .rs-header :nth-child(3) {
+    margin-top: 6%;
+  }
 
   main .article-btn {
     justify-content: flex-start !important;
@@ -385,13 +394,7 @@ main #section-6 .partners a img {
   }
   header .first-page .rs-header {
     left: 8% !important;
-    top: -4vh !important;
-  }
-  header .first-page .rs-header :nth-child(2) {
-    margin-top: 3%;
-  }
-  header .first-page .rs-header :nth-child(3) {
-    margin-top: 6%;
+    top: -5vh !important;
   }
 
   main section:nth-child(2n) {

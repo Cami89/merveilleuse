@@ -309,7 +309,8 @@ body header .hero-top {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
   background-image: url(../images/bkg/header-wave2.svg);
   background-size: cover;
   background-position: bottom 0% right 50%;

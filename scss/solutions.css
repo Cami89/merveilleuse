@@ -201,10 +201,8 @@ header .first-page .hero-top .header-star4 {
 header .first-page .hero-top .header-btn {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 90%;
-  margin: 0 auto;
 }
 header .first-page .hero-top .header-btn a {
   margin: 5px;
@@ -229,42 +227,58 @@ main {
   margin-bottom: 130px;
 }
 main section {
-  padding-top: 70px;
-}
-main section article {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  padding-top: 70px;
 }
 main section article p span {
   color: #e1d201;
   font-weight: bold;
 }
-main section article img {
-  width: 100%;
-  margin: 15px 0;
+main section div {
+  display: flex;
+  flex-direction: column;
+}
+main section div :nth-child(1) {
+  margin: auto;
+  max-width: 100%;
+}
+main section div :nth-child(2) {
+  width: 100px;
+  margin: auto;
+}
+main .final-img img {
+  max-width: 100%;
+  margin-top: 80px;
 }
 
-@media screen and (min-width: 500px) {
-  header .header-btn {
-    justify-content: center !important;
-  }
+@media screen and (min-width: 500px) and (max-width: 999px) {
   header .header-btn a {
     margin: 15px !important;
   }
 
-  main article {
-    display: block !important;
-  }
-  main article img {
-    width: 40% !important;
-    margin: 0 0 0 15px !important;
-    float: right;
+  main section img {
+    max-width: 70% !important;
   }
 }
 @media screen and (min-width: 1000px) {
+  header .header-btn a {
+    margin: 15px !important;
+  }
+
   main section {
     padding: 70px 30px 0 !important;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  main section article {
+    margin-right: 30px;
+    width: 40%;
+  }
+  main section div {
+    width: 60%;
   }
 }
 
-/*# sourceMappingURL=a-propos.css.map */
+/*# sourceMappingURL=solutions.css.map */

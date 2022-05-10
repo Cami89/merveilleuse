@@ -181,6 +181,7 @@ body h1 {
   font-size: 90px;
   font-weight: initial;
   line-height: 1;
+  color: #e1d201;
 }
 body h2 {
   font-family: "Roboto";
@@ -307,10 +308,9 @@ body header nav .nav-container .showMenu {
 body header .hero-top {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-image: url(../images/bkg/header-wave2.svg);
   background-size: cover;
   background-position: bottom 0% right 50%;

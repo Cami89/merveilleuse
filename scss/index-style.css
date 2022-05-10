@@ -166,16 +166,17 @@ header .first-page {
 }
 header .first-page .hero-top {
   height: 90vh;
+  align-items: center;
 }
 header .first-page .hero-top .hero-title {
   text-align: end;
-  color: #e1d201;
 }
 header .first-page .hero-top .hero-title h1 {
   margin: 100px 0 0;
 }
 header .first-page .hero-top .hero-title p {
   margin-top: -10px;
+  color: #e1d201;
 }
 header .first-page .hero-top > p {
   text-align: center;
@@ -201,8 +202,9 @@ header .first-page .hero-top a {
   width: 100px;
   height: 98px;
   position: relative;
-  top: -85px;
+  top: -60px;
   animation: cta-btn-anim infinite 12s;
+  margin-top: -50px;
 }
 header .first-page .hero-top a:hover {
   background-color: #f0502c;
@@ -261,7 +263,6 @@ main section {
   flex-direction: column;
   justify-content: center;
   height: 100vh;
-  padding: 0 0 30px;
 }
 main section article {
   display: flex;

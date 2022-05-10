@@ -8,10 +8,10 @@ header {
 
         .hero-top {
             height: 90vh;
+            align-items: center;
 
             .hero-title {
                 text-align: end;
-                color: $goldYellow;
 
                 h1 {
                     margin: 100px 0 0;
@@ -19,6 +19,7 @@ header {
 
                 p {
                     margin-top: -10px;
+                    color: $goldYellow;
                 }
             }
 
@@ -42,8 +43,9 @@ header {
             a {
                 @include principal-btn;
                 position: relative;
-                top: -85px;
+                top: -60px;
                 animation: cta-btn-anim infinite 12s;
+                margin-top: -50px;
             }
 
             .clic {
@@ -107,7 +109,6 @@ main {
         flex-direction: column;
         justify-content: center;
         height: 100vh;
-        padding: 0 0 30px;
 
         article {
             display: flex;

@@ -7,10 +7,10 @@
 
 body {
 
-    font-family: 'roboto';
+    font-family: 'Barlow', sans-serif;
     font-size: 16px;
     line-height: 1.4;
-    color: $darkBlue;
+    color: $DkBlue-trsp;
     background-color: $whity;
     background-image: url(../images/bkg/body-bkg.png);
     background-repeat: no-repeat;
@@ -22,11 +22,10 @@ body {
         font-size: 90px;
         font-weight: initial;
         line-height: 1;
-        color: $goldYellow;
     }
 
     h2 {
-        font-family: 'Roboto';
+        font-family: 'Barlow', sans-serif;
         font-size: 26px;
         line-height: 1;
         text-transform: uppercase;
@@ -47,6 +46,14 @@ body {
         color: $darkBlue;
         text-decoration: none;
         cursor: pointer;
+        text-align: center;
+    }
+
+    button {
+        border: none;
+        margin: 0;
+        padding: 0;
+        background: transparent;
     }
 
     li {

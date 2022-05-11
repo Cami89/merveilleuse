@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: "UpperEastSide";
   src: url(../polices/UpperEastSide.ttf) format("truetype");
@@ -166,10 +166,10 @@
 }
 
 body {
-  font-family: "roboto";
+  font-family: "Barlow", sans-serif;
   font-size: 16px;
   line-height: 1.4;
-  color: #29225a;
+  color: rgba(41, 34, 90, 0.8901960784);
   background-color: #FEFEFE;
   background-image: url(../images/bkg/body-bkg.png);
   background-repeat: no-repeat;
@@ -181,10 +181,9 @@ body h1 {
   font-size: 90px;
   font-weight: initial;
   line-height: 1;
-  color: #e1d201;
 }
 body h2 {
-  font-family: "Roboto";
+  font-family: "Barlow", sans-serif;
   font-size: 26px;
   line-height: 1;
   text-transform: uppercase;
@@ -200,6 +199,13 @@ body button {
   color: #29225a;
   text-decoration: none;
   cursor: pointer;
+  text-align: center;
+}
+body button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: transparent;
 }
 body li {
   list-style: none;
@@ -213,7 +219,7 @@ body header nav {
   box-shadow: 0 0 2px 0 rgba(7, 39, 44, 0.2);
   position: fixed;
   z-index: 100;
-  background: linear-gradient(95deg, #29225a 40%, #014d92);
+  background: linear-gradient(95deg, rgba(41, 34, 90, 0.8901960784) 40%, #014d92);
 }
 body header nav .nav-container {
   width: 100%;
@@ -338,6 +344,7 @@ body .contact-bubble:hover {
   color: #FEFEFE;
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
+  border: none;
 }
 body .contact-bubble p {
   margin-top: -3px;
@@ -368,6 +375,7 @@ body #top-btn:hover {
   color: #FEFEFE;
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
+  border: none;
 }
 body #top-btn:hover {
   z-index: 101;

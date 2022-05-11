@@ -54,7 +54,7 @@ header {
                 
                 a {
                     margin: 5px;
-                    @include principal-btn;
+                    @include header-btn;
                 }
                 
             }
@@ -68,7 +68,7 @@ main {
 
     section {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding-top: 70px;
 
         article {
@@ -76,6 +76,18 @@ main {
                 span {
                     color: $goldYellow;
                     font-weight: bold;
+                }
+            }
+            button {
+                margin-top: 13px;
+                a {
+                    @include white-btn;
+                    text-align: center;
+
+                    img {
+                        width: 20px;
+                        padding-left: 3px;
+                    }
                 }
             }
         }
@@ -103,7 +115,7 @@ main {
     }
 }
 
-@media screen and (min-width:500px) and (max-width:999px) {
+@media screen and (min-width:500px) and (max-width:700px) {
     header {
         .header-btn {
             a {
@@ -114,13 +126,13 @@ main {
     main {
         section {
             img {
-                max-width: 70%!important;
+                max-width: 55%!important;
             }
         }
     }
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width:701px) {
     header {
         .header-btn {
             a {
@@ -130,7 +142,7 @@ main {
     }
     main {
         section {
-            padding: 70px 30px 0 !important;
+            padding: 50px 30px 0 !important;
             display: flex;
             justify-content: space-between;
             flex-direction: row;
@@ -141,6 +153,9 @@ main {
             }
             div {
                 width: 60%;
+                :nth-child(1) {
+                    width: 80%!important;
+                }
             }
 
         }

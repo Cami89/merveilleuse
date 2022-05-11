@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: "UpperEastSide";
   src: url(../polices/UpperEastSide.ttf) format("truetype");
@@ -209,19 +209,22 @@ header .first-page .hero-top .header-btn {
 header .first-page .hero-top .header-btn a {
   margin: 5px;
   display: flex;
-  background-color: #FEFEFE;
+  box-shadow: 0px 6px 20px 3px rgba(0, 0, 0, 0.15);
+  width: 150px;
+  height: 50px;
+  background: #014d92;
+  color: #FEFEFE;
   align-items: center;
   justify-content: center;
   border-radius: 100px;
   box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
-  width: 100px;
-  height: 98px;
 }
 header .first-page .hero-top .header-btn a:hover {
   background-color: #f0502c;
   color: #FEFEFE;
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
+  border: none;
 }
 
 main {

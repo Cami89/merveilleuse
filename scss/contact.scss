@@ -6,44 +6,41 @@ header {
         overflow: hidden;
 
         h1 {
-            padding-top: 20px;
-            text-align: center;
-            margin : 0
+            margin: 55px auto 50px;
         }
 
         &>img {
-            position: relative;
+            position: absolute;
         }
 
         .fairy {
-            width: 160px;
-            margin-bottom: 70px;
-            left: 150px;
-            top: 20px;
+            top: 70px;
+            right: 0;
+            width: 10em;
         }
 
-        .cta-star1 {
+        .header-star1 {
             width: 1em;
-            top: 10em;
-            left: -10em;
+            top: 400px;
+            left: 15px;
         }
 
-        .cta-star2 {
+        .header-star2 {
             width: 0.7em;
-            top: 13em;
-            left: -6em;
+            top: 7em;
+            left: 4em;
         }
 
-        .cta-star3 {
+        .header-star3 {
             width: 0.9em;
-            top: -16em;
-            left: -6em;
+            bottom: 135px;
+            right: 50px;
         }
 
-        .cta-star4 {
+        .header-star4 {
             width: 0.8em;
-            top: 0.5em;
-            left: 9.5em;
+            top: 15em;
+            left: 9em;
         }
     }
 }
@@ -57,9 +54,9 @@ main {
             display: none;
             padding: 1em;
             margin-bottom: 1em;
-            color: $darkRed;
+            color: crimson;
             background-color: #ffc0cb3b;
-            border: solid 0.1em $darkRed;
+            border: solid 0.1em crimson;
             border-radius: 3px;
         }
         .popUpSuccess {
@@ -83,18 +80,23 @@ main {
                 }
                 .clientContact {
                     height: 2em;
-                    background-color: #f3f3f8;
-                    border: 1px solid $darkBlue;
+                    background-color: $LightBlue;
+                    border: 1px solid $DkBlue-trsp;
                     padding: 0.3em 0.5em;
-                    border-radius: 3px;
+                    border-radius: 5px;
                 }
                 #formMsg {
                     height: 15em;
                     font-family: "roboto";
                 }
+                input::placeholder, textarea::placeholder {
+                    font-family: 'roboto';
+                    color: $DkBlue-trsp;
+                    font-size: 14px;
+                }
             }
             #formErreur {
-                color: $darkRed;
+                color: crimson;
             }
             .submitButton {
                 border: 0.01em solid transparent;

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
   font-family: "UpperEastSide";
   src: url(../polices/UpperEastSide.ttf) format("truetype");
@@ -165,38 +165,35 @@ header .hero-top {
   overflow: hidden;
 }
 header .hero-top h1 {
-  padding-top: 20px;
-  text-align: center;
-  margin: 0;
+  margin: 55px auto 50px;
 }
 header .hero-top > img {
-  position: relative;
+  position: absolute;
 }
 header .hero-top .fairy {
-  width: 160px;
-  margin-bottom: 70px;
-  left: 150px;
-  top: 20px;
+  top: 70px;
+  right: 0;
+  width: 10em;
 }
-header .hero-top .cta-star1 {
+header .hero-top .header-star1 {
   width: 1em;
-  top: 10em;
-  left: -10em;
+  top: 400px;
+  left: 15px;
 }
-header .hero-top .cta-star2 {
+header .hero-top .header-star2 {
   width: 0.7em;
-  top: 13em;
-  left: -6em;
+  top: 7em;
+  left: 4em;
 }
-header .hero-top .cta-star3 {
+header .hero-top .header-star3 {
   width: 0.9em;
-  top: -16em;
-  left: -6em;
+  bottom: 135px;
+  right: 50px;
 }
-header .hero-top .cta-star4 {
+header .hero-top .header-star4 {
   width: 0.8em;
-  top: 0.5em;
-  left: 9.5em;
+  top: 15em;
+  left: 9em;
 }
 
 main section {
@@ -206,9 +203,9 @@ main section .popUpError {
   display: none;
   padding: 1em;
   margin-bottom: 1em;
-  color: #992b25;
+  color: crimson;
   background-color: rgba(255, 192, 203, 0.231372549);
-  border: solid 0.1em #992b25;
+  border: solid 0.1em crimson;
   border-radius: 3px;
 }
 main section .popUpSuccess {
@@ -231,22 +228,27 @@ main section form .formChamps label {
 }
 main section form .formChamps .clientContact {
   height: 2em;
-  background-color: #f3f3f8;
-  border: 1px solid #29225a;
+  background-color: #ebf5ff;
+  border: 1px solid rgba(41, 34, 90, 0.8901960784);
   padding: 0.3em 0.5em;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 main section form .formChamps #formMsg {
   height: 15em;
   font-family: "roboto";
 }
+main section form .formChamps input::placeholder, main section form .formChamps textarea::placeholder {
+  font-family: "roboto";
+  color: rgba(41, 34, 90, 0.8901960784);
+  font-size: 14px;
+}
 main section form #formErreur {
-  color: #992b25;
+  color: crimson;
 }
 main section form .submitButton {
   border: 0.01em solid transparent;
   display: flex;
-  background-color: #29225a;
+  background-color: rgba(41, 34, 90, 0.8901960784);
   color: #FEFEFE;
   align-items: center;
   justify-content: center;
@@ -261,6 +263,7 @@ main section form .submitButton:hover {
   color: #FEFEFE;
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
+  border: none;
 }
 main section[id=details] a {
   text-decoration: none;

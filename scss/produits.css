@@ -230,86 +230,72 @@ main {
   margin-bottom: 130px;
 }
 main section {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+main section .list-ref div {
   display: flex;
-  flex-direction: column-reverse;
-  padding-top: 70px;
+  flex-wrap: wrap;
+  width: 100%;
 }
-main section article p span {
-  color: #e1d201;
-  font-weight: bold;
+main section .list-ref .list ul {
+  padding: 20px;
+  background-color: #ebf5ff;
+  width: 100%;
 }
-main section article button {
-  margin-top: 13px;
+main section .list-ref .list ul h3 {
+  margin-top: 0;
 }
-main section article button a {
+main section .list-ref .ref-client {
+  flex-direction: column;
+}
+main section .list-ref .ref-client div {
+  align-items: center;
+}
+main section .list-ref .ref-client div img {
+  width: 80px;
+  margin: 10px;
+}
+main .button-bloc {
+  margin-top: 50px;
+}
+main .button-bloc a:first-of-type {
   display: flex;
-  width: 150px;
-  height: 42px;
-  background: #FEFEFE;
+  background-color: rgba(41, 34, 90, 0.8901960784);
+  color: #FEFEFE;
   align-items: center;
   justify-content: center;
   border-radius: 100px;
   box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
-  text-align: center;
+  height: 42px;
+  width: 150px;
 }
-main section article button a:hover {
+main .button-bloc a:first-of-type:hover {
   background-color: #f0502c;
   color: #FEFEFE;
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
   border: none;
 }
-main section article button a img {
-  width: 20px;
-  padding-left: 3px;
-}
-main section div {
-  display: flex;
-  flex-direction: column;
-}
-main section div :nth-child(1) {
-  margin: auto;
-  max-width: 100%;
-}
-main section div :nth-child(2) {
-  width: 100px;
-  margin: auto;
-}
-main .final-img img {
-  max-width: 100%;
-  margin-top: 80px;
-}
 
-@media screen and (min-width: 500px) and (max-width: 700px) {
+@media screen and (min-width: 1000px) {
   header .header-btn a {
     margin: 15px !important;
   }
 
-  main section img {
-    max-width: 55% !important;
-  }
-}
-@media screen and (min-width: 701px) {
-  header .header-btn a {
-    margin: 15px !important;
-  }
-
-  main section {
-    padding: 50px 30px 0 !important;
-    display: flex;
+  main section .list-ref .list {
     justify-content: space-between;
-    flex-direction: row;
+    align-items: flex-start;
   }
-  main section article {
-    margin-right: 30px;
-    width: 40%;
+  main section .list-ref .list.col2 div {
+    width: 47%;
   }
-  main section div {
-    width: 60%;
+  main section .list-ref .list.col2 div ul {
+    width: 100%;
   }
-  main section div :nth-child(1) {
-    width: 80% !important;
+  main section .list-ref .list.col3 ul {
+    width: 30%;
   }
 }
 
-/*# sourceMappingURL=solutions.css.map */
+/*# sourceMappingURL=produits.css.map */

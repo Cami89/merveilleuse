@@ -264,7 +264,7 @@ main section article img {
 @media screen and (min-width: 1000px) {
   header .header-btn {
     margin-top: 50px;
-    max-width: 50%;
+    max-width: 40% !important;
   }
 
   main section {

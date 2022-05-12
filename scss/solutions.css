@@ -289,7 +289,7 @@ main .final-img img {
 @media screen and (min-width: 701px) {
   header .header-btn {
     margin-top: 50px;
-    max-width: 50%;
+    max-width: 40%;
   }
 
   main > :nth-child(odd) {

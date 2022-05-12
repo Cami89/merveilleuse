@@ -197,10 +197,10 @@ header .first-page .hero-top a {
   background-color: #FEFEFE;
   align-items: center;
   justify-content: center;
-  border-radius: 100px;
   box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
   width: 100px;
   height: 98px;
+  border-radius: 100px;
   position: relative;
   top: -60px;
   animation: cta-btn-anim infinite 12s;
@@ -297,8 +297,8 @@ main section article .article-btn .articleLink a {
   background: #FEFEFE;
   align-items: center;
   justify-content: center;
-  border-radius: 100px;
   box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
+  border-radius: 100px;
 }
 main section article .article-btn .articleLink a:hover {
   background-color: #f0502c;
@@ -313,10 +313,10 @@ main section article .article-btn .next-link a {
   color: #FEFEFE;
   align-items: center;
   justify-content: center;
-  border-radius: 100px;
   box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
   height: 42px;
   width: 150px;
+  border-radius: 100px;
   text-align: center;
 }
 main section article .article-btn .next-link a:hover {

@@ -160,40 +160,82 @@
     transform: scale(1.1, 1.1);
   }
 }
-header .hero-top {
-  height: 55vh;
+header .first-page {
+  height: 100vh;
   overflow: hidden;
 }
-header .hero-top h1 {
-  margin: 55px auto 50px;
+header .first-page .hero-top {
+  height: 90vh;
 }
-header .hero-top > img {
+header .first-page .hero-top h1 {
+  margin: 50px auto 40px;
+}
+header .first-page .hero-top > img {
   position: absolute;
 }
-header .hero-top .fairy {
+header .first-page .hero-top .fairy {
   top: 70px;
   right: 0;
   width: 10em;
 }
-header .hero-top .header-star1 {
+header .first-page .hero-top .header-star1 {
   width: 1em;
   top: 400px;
   left: 15px;
 }
-header .hero-top .header-star2 {
+header .first-page .hero-top .header-star2 {
   width: 0.7em;
   top: 7em;
   left: 4em;
 }
-header .hero-top .header-star3 {
+header .first-page .hero-top .header-star3 {
   width: 0.9em;
   bottom: 135px;
   right: 50px;
 }
-header .hero-top .header-star4 {
+header .first-page .hero-top .header-star4 {
   width: 0.8em;
   top: 15em;
   left: 9em;
+}
+header .first-page .hero-top .header-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+header .first-page .hero-top .header-btn a {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  box-shadow: 0px 6px 20px 3px rgba(0, 0, 0, 0.15);
+  width: 150px;
+  height: 65px;
+  background: #014d92;
+  color: #FEFEFE;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
+}
+header .first-page .hero-top .header-btn a:hover {
+  background-color: #f0502c;
+  color: #FEFEFE;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+header .first-page .rs-header {
+  position: relative;
+  top: -2vh;
+  left: 15px;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+header .first-page .rs-header a:hover {
+  transform: scale(1.1);
 }
 
 main section {
@@ -234,11 +276,11 @@ main section form .formChamps .clientContact {
   border-radius: 5px;
 }
 main section form .formChamps #formMsg {
-  height: 15em;
-  font-family: "roboto";
+  height: 200px;
+  font-family: "Barlow", sans-serif;
 }
 main section form .formChamps input::placeholder, main section form .formChamps textarea::placeholder {
-  font-family: "roboto";
+  font-family: "Barlow", sans-serif;
   color: rgba(41, 34, 90, 0.8901960784);
   font-size: 14px;
 }
@@ -252,10 +294,10 @@ main section form .submitButton {
   color: #FEFEFE;
   align-items: center;
   justify-content: center;
-  border-radius: 100px;
   box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
   height: 42px;
   width: 150px;
+  border-radius: 100px;
   margin: 30px auto 0;
 }
 main section form .submitButton:hover {
@@ -273,6 +315,21 @@ main section[id=details] a {
 }
 
 @media screen and (min-width: 1000px) {
+  header .header-btn {
+    margin-top: 50px;
+    max-width: 50%;
+  }
+  header .rs-header {
+    top: -7vh !important;
+    left: 100px !important;
+  }
+  header .rs-header :nth-child(2) {
+    margin-top: 3%;
+  }
+  header .rs-header :nth-child(3) {
+    margin-top: 6%;
+  }
+
   section[id=details] .address-bloc {
     display: flex;
     justify-content: space-between;

@@ -46,19 +46,18 @@ header {
                 top: 15em;
                 left: 9em;
             }
-
             .header-btn {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 flex-wrap: wrap;
-
+                
                 a {
                     margin: 5px;
                     padding: 5px;
                     @include header-btn;
                 }
-
+                
             }
         }
     }
@@ -72,78 +71,14 @@ main {
         padding-top: 60px;
         padding-bottom: 50px;
 
-        .list-ref {
-            div {
-                display: flex;
-                flex-wrap: wrap;
-                width: 100%;
-            }
-
-            .list {
-                ul {
-                    padding: 20px;
-                    background-color: $LightBlue;
-                    width: 100%;
-                    h3 { 
-                        margin-top: 0;
-                    }
-                }
-
-            }
-
-            .ref-client {
-                flex-direction: column;
-
-                div {
-                    align-items: center;
-
-                    img {
-                        width: 80px;
-                        margin: 10px;
-                    }
-                }
-            }
-        }
-    }
-    .button-bloc {
-        margin-top: 50px;
-        a:first-of-type {
-            @include blue-btn;
-        }
     }
 }
-
-
 
 @media screen and (min-width:1000px) {
     header {
         .header-btn {
             margin-top: 50px;
             max-width: 50%;
-        }
-    }
-
-    main {
-        section {
-            .list-ref {
-                .list {
-                    justify-content: space-between;
-                    align-items: flex-start;
-                }
-                .list.col2 {
-                    div {
-                        width: 47%;
-                        ul {
-                            width: 100%;
-                        }
-                    }
-                }
-                .list.col3 {
-                    ul {
-                        width: 30%;
-                    }
-                }
-            }
         }
     }
 }

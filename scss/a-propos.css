@@ -168,7 +168,7 @@ header .first-page .hero-top {
   height: 90vh;
 }
 header .first-page .hero-top h1 {
-  margin: 55px auto 50px;
+  margin: 50px auto 40px;
 }
 header .first-page .hero-top > img {
   position: absolute;
@@ -201,22 +201,22 @@ header .first-page .hero-top .header-star4 {
 header .first-page .hero-top .header-btn {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  width: 90%;
   margin: 0 auto;
 }
 header .first-page .hero-top .header-btn a {
   margin: 5px;
+  padding: 5px;
   display: flex;
   box-shadow: 0px 6px 20px 3px rgba(0, 0, 0, 0.15);
   width: 150px;
-  height: 50px;
+  height: 65px;
   background: #014d92;
   color: #FEFEFE;
+  border-radius: 5px;
   align-items: center;
   justify-content: center;
-  border-radius: 100px;
   box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
 }
 header .first-page .hero-top .header-btn a:hover {
@@ -251,9 +251,6 @@ main section article img {
   header .header-btn {
     justify-content: center !important;
   }
-  header .header-btn a {
-    margin: 15px !important;
-  }
 
   main article {
     display: block !important;
@@ -265,6 +262,11 @@ main section article img {
   }
 }
 @media screen and (min-width: 1000px) {
+  header .header-btn {
+    margin-top: 50px;
+    max-width: 50%;
+  }
+
   main section {
     padding: 70px 30px 0 !important;
   }

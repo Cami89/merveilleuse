@@ -1,46 +1,74 @@
 @import 'variables';
 
 header {
-    .hero-top {
-        height: 55vh;
+    .first-page {
+        height: 100vh;
         overflow: hidden;
-
-        h1 {
-            margin: 55px auto 50px;
+        .hero-top {
+            height: 90vh;
+    
+            h1 {
+                margin: 50px auto 40px;
+            }
+    
+            &>img {
+                position: absolute;
+            }
+    
+            .fairy {
+                top: 70px;
+                right: 0;
+                width: 10em;
+            }
+    
+            .header-star1 {
+                width: 1em;
+                top: 400px;
+                left: 15px;
+            }
+    
+            .header-star2 {
+                width: 0.7em;
+                top: 7em;
+                left: 4em;
+            }
+    
+            .header-star3 {
+                width: 0.9em;
+                bottom: 135px;
+                right: 50px;
+            }
+    
+            .header-star4 {
+                width: 0.8em;
+                top: 15em;
+                left: 9em;
+            }
+            .header-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                margin: 0 auto;
+                
+                a {
+                    margin: 5px;
+                    padding: 5px;
+                    @include header-btn;
+                }              
+            }
         }
-
-        &>img {
-            position: absolute;
-        }
-
-        .fairy {
-            top: 70px;
-            right: 0;
-            width: 10em;
-        }
-
-        .header-star1 {
-            width: 1em;
-            top: 400px;
+        .rs-header {
+            position: relative;
+            top: -2vh;
             left: 15px;
-        }
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
 
-        .header-star2 {
-            width: 0.7em;
-            top: 7em;
-            left: 4em;
-        }
-
-        .header-star3 {
-            width: 0.9em;
-            bottom: 135px;
-            right: 50px;
-        }
-
-        .header-star4 {
-            width: 0.8em;
-            top: 15em;
-            left: 9em;
+            a:hover {
+                transform: scale(1.1);
+            }
         }
     }
 }
@@ -86,11 +114,11 @@ main {
                     border-radius: 5px;
                 }
                 #formMsg {
-                    height: 15em;
-                    font-family: "roboto";
+                    height: 200px;
+                    font-family: 'Barlow', sans-serif;;
                 }
                 input::placeholder, textarea::placeholder {
-                    font-family: 'roboto';
+                    font-family: 'Barlow', sans-serif;
                     color: $DkBlue-trsp;
                     font-size: 14px;
                 }
@@ -118,6 +146,28 @@ main {
 }
 
 @media screen and (min-width:1000px) {
+
+    header {
+        .header-btn {
+            margin-top: 50px;
+            max-width: 50%;
+        }
+        .rs-header {
+            top: -7vh!important;
+            left: 100px!important;
+            :nth-child(2) {
+                margin-top: 3%;
+            }
+    
+            :nth-child(3) {
+                margin-top: 6%;
+            }
+        }
+    }
+
+
+        
+    
 
     section[id="details"] {
         .address-bloc {

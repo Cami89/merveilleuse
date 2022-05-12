@@ -280,12 +280,8 @@ body header nav .nav-container .top-nav-ul {
   box-shadow: 0 0 2px 0 rgba(7, 39, 44, 0.2);
 }
 body header nav .nav-container .top-nav-ul .top-nav-li {
-  font-size: 1em;
   overflow: hidden;
-  height: 2.5em;
-}
-body header nav .nav-container .top-nav-ul .top-nav-li .top-nav-link {
-  color: #29225a;
+  height: 4em;
 }
 body header nav .nav-container .top-nav-ul .top-nav-li .top-nav-link:hover {
   background: linear-gradient(to bottom, transparent 70%, #f0502c 30%);
@@ -315,6 +311,7 @@ body header .hero-top {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-left: 10px;
   padding-right: 10px;
   background-image: url(../images/bkg/header-wave2.svg);
@@ -330,11 +327,11 @@ body .contact-bubble {
   color: #FEFEFE;
   align-items: center;
   justify-content: center;
-  border-radius: 100px;
   box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
   width: 55px;
   height: 55px;
   z-index: 100;
+  border-radius: 100px;
   position: fixed;
   right: 15px;
   bottom: 55px;
@@ -364,8 +361,8 @@ body #top-btn {
   width: 55px;
   align-items: center;
   justify-content: center;
-  border-radius: 100px;
   box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
+  border-radius: 100px;
   position: fixed;
   bottom: 100px;
   right: 15px;
@@ -443,7 +440,7 @@ body footer .footer-links a:hover {
     box-shadow: none !important;
   }
   header nav .top-nav-ul .top-nav-li {
-    padding: 0em 0em 0em 2em !important;
+    padding: 0em 0em 0em 1.3em !important;
   }
   header nav .top-nav-ul .top-nav-li .top-nav-link {
     color: #FEFEFE !important;

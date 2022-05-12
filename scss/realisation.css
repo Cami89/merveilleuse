@@ -231,94 +231,15 @@ main {
   margin-bottom: 130px;
 }
 main section {
-  display: flex;
-  flex-direction: column;
-  padding-top: 75px;
-}
-main section article p span {
-  color: #e1d201;
-  font-weight: bold;
-}
-main section article button {
-  margin-top: 13px;
-}
-main section article button a {
-  display: flex;
-  width: 150px;
-  height: 42px;
-  background: #FEFEFE;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
-  border-radius: 100px;
-  text-align: center;
-}
-main section article button a:hover {
-  background-color: #f0502c;
-  color: #FEFEFE;
-  transform: scale(1.1);
-  transition: all 0.2s ease-in-out;
-  border: none;
-}
-main section article button a img {
-  width: 20px;
-  padding-left: 3px;
-}
-main section div {
-  display: flex;
-  flex-direction: column;
-}
-main section div :nth-child(1) {
-  margin: auto;
-  max-width: 100%;
-}
-main section div :nth-child(2) {
-  width: 100px;
-  margin: auto;
-}
-main .final-img img {
-  max-width: 100%;
-  margin-top: 80px;
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
 
-@media screen and (min-width: 500px) and (max-width: 700px) {
-  main section img {
-    max-width: 55% !important;
-  }
-}
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 1000px) {
   header .header-btn {
     margin-top: 50px;
     max-width: 50%;
   }
-
-  main > :nth-child(odd) {
-    flex-direction: row;
-  }
-  main > :nth-child(odd) img:first-of-type {
-    margin-left: 0px !important;
-  }
-  main > :nth-child(even) {
-    flex-direction: row-reverse;
-  }
-  main > :nth-child(even) img:first-of-type {
-    margin-right: 0px !important;
-  }
-  main section {
-    padding-left: 30px;
-    padding-right: 30px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  main section article {
-    width: 50%;
-  }
-  main section div {
-    width: 50%;
-  }
-  main section div :nth-child(1) {
-    width: 80% !important;
-  }
 }
 
-/*# sourceMappingURL=solutions.css.map */
+/*# sourceMappingURL=realisation.css.map */

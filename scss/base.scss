@@ -141,12 +141,10 @@ body {
                     @include bloc-shadow;
 
                     .top-nav-li {
-                        font-size: 1em;
                         overflow: hidden;
-                        height: 2.5em;
+                        height: 4em;
 
                         .top-nav-link {
-                            color: $darkBlue;
 
                             &:hover {
                                 @include link-hover;
@@ -189,6 +187,7 @@ body {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             padding-left: 10px;
             padding-right: 10px;
             background-image: url(../images/bkg/header-wave2.svg);
@@ -298,7 +297,7 @@ body {
                 box-shadow: none !important;
 
                 .top-nav-li {
-                    padding: 0em 0em 0em 2em !important;
+                    padding: 0em 0em 0em 1.3em !important;
 
                     .top-nav-link {
                         color: $whity !important;

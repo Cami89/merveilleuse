@@ -10,7 +10,7 @@ header {
             height: 90vh;
 
             h1 {
-                margin: 55px auto 50px;
+                margin: 50px auto 40px;
             }
 
             &>img {
@@ -54,6 +54,7 @@ header {
                 
                 a {
                     margin: 5px;
+                    padding: 5px;
                     @include header-btn;
                 }
                 
@@ -68,8 +69,9 @@ main {
 
     section {
         display: flex;
-        flex-direction: column-reverse;
-        padding-top: 70px;
+        flex-direction: column;
+        padding-top: 75px;
+      //  background: url(../images/bkg/blob.png) 100% no-repeat;
 
         article {
             p {
@@ -116,13 +118,7 @@ main {
 }
 
 @media screen and (min-width:500px) and (max-width:700px) {
-    header {
-        .header-btn {
-            a {
-                margin: 15px!important;
-            }
-        }
-    }
+
     main {
         section {
             img {
@@ -135,29 +131,40 @@ main {
 @media screen and (min-width:701px) {
     header {
         .header-btn {
-            a {
-                margin: 15px!important;
-            }
+            margin-top: 50px;
+            max-width: 50%;
         }
     }
     main {
-        section {
-            padding: 50px 30px 0 !important;
-            display: flex;
-            justify-content: space-between;
+        > :nth-child(odd) {
             flex-direction: row;
+            img:first-of-type {
+                margin-left: 0px!important;
+            }
+            
+        }
+        > :nth-child(even) {
+            flex-direction: row-reverse;
+            img:first-of-type {
+                margin-right: 0px!important;
+            }
+            
+        }
+        section {
+            padding-left: 30px;
+            padding-right: 30px;
+            justify-content: space-between;
+            align-items: center;
 
             article {
-                margin-right: 30px;
-                width: 40%;
+                width: 50%;
             }
             div {
-                width: 60%;
+                width: 50%;
                 :nth-child(1) {
                     width: 80%!important;
                 }
             }
-
         }
     }
 }

@@ -165,6 +165,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 body {
   font-family: "Barlow", sans-serif;
   font-size: 16px;
@@ -175,6 +179,9 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
 }
 body h1 {
   font-family: "UpperEastSide";
@@ -417,6 +424,12 @@ body footer .footer-links a:hover {
   background: linear-gradient(to bottom, transparent 70%, #f0502c 30%);
 }
 
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* The hack for Safari */
+    min-height: -webkit-fill-available;
+  }
+}
 @media screen and (min-width: 1000px) {
   header nav {
     padding-left: 1em;

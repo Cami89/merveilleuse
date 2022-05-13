@@ -203,7 +203,6 @@ header .first-page .hero-top .header-btn {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto;
 }
 header .first-page .hero-top .header-btn a {
   margin: 5px;
@@ -238,10 +237,157 @@ header .first-page .rs-header a:hover {
   transform: scale(1.1);
 }
 
-main section {
+#a-propos {
+  padding: 0 20px;
+  margin-bottom: 130px;
+}
+#a-propos section {
+  padding-top: 70px;
+}
+#a-propos section article {
+  display: flex;
+  flex-direction: column-reverse;
+}
+#a-propos section article p span {
+  color: #e1d201;
+  font-weight: 700;
+}
+#a-propos section article img {
+  width: 100%;
+  margin: 15px 0;
+}
+
+#solutions {
+  padding: 0 20px;
+  margin-bottom: 130px;
+}
+#solutions section {
+  display: flex;
+  flex-direction: column;
+  padding-top: 75px;
+}
+#solutions section article p span {
+  color: #e1d201;
+  font-weight: bold;
+}
+#solutions section article button {
+  margin-top: 13px;
+}
+#solutions section article button a {
+  display: flex;
+  width: 150px;
+  height: 42px;
+  background: #FEFEFE;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
+  border-radius: 100px;
+  text-align: center;
+}
+#solutions section article button a:hover {
+  background-color: #f0502c;
+  color: #FEFEFE;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+#solutions section article button a img {
+  width: 20px;
+  padding-left: 3px;
+}
+#solutions section div {
+  display: flex;
+  flex-direction: column;
+}
+#solutions section div :nth-child(1) {
+  margin: auto;
+  max-width: 100%;
+}
+#solutions section div :nth-child(2) {
+  width: 100px;
+  margin: auto;
+}
+#solutions .final-img img {
+  max-width: 100%;
+  margin-top: 80px;
+}
+
+#produits {
+  padding: 0 20px;
+  margin-bottom: 130px;
+}
+#produits section {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+#produits section .list-ref div {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#produits section .list-ref .list ul {
+  padding: 20px;
+  background-color: #ebf5ff;
+  width: 100%;
+}
+#produits section .list-ref .list ul h3 {
+  margin-top: 0;
+}
+#produits section .list-ref .ref-client {
+  flex-direction: column;
+}
+#produits section .list-ref .ref-client div {
+  align-items: center;
+}
+#produits section .list-ref .ref-client div img {
+  width: 80px;
+  margin: 10px;
+}
+#produits .button-bloc {
+  margin-top: 50px;
+}
+#produits .button-bloc a:first-of-type {
+  display: flex;
+  background-color: rgba(41, 34, 90, 0.8901960784);
+  color: #FEFEFE;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
+  height: 42px;
+  width: 150px;
+  border-radius: 100px;
+  margin: auto;
+}
+#produits .button-bloc a:first-of-type:hover {
+  background-color: #f0502c;
+  color: #FEFEFE;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+#enjeux {
+  padding: 0 20px;
+  margin-bottom: 130px;
+}
+#enjeux section {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+#realisations {
+  padding: 0 20px;
+  margin-bottom: 130px;
+}
+#realisations section {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+#contact section {
   padding: 60px 20px 0;
 }
-main section .popUpError {
+#contact section .popUpError {
   display: none;
   padding: 1em;
   margin-bottom: 1em;
@@ -250,7 +396,7 @@ main section .popUpError {
   border: solid 0.1em crimson;
   border-radius: 3px;
 }
-main section .popUpSuccess {
+#contact section .popUpSuccess {
   display: none;
   padding: 1em;
   margin-bottom: 1em;
@@ -259,35 +405,35 @@ main section .popUpSuccess {
   border: solid 1px green;
   border-radius: 3px;
 }
-main section form .formChamps {
+#contact section form .formChamps {
   padding: 0.5em 0em;
   display: flex;
   flex-direction: column;
   text-align: left;
 }
-main section form .formChamps label {
+#contact section form .formChamps label {
   padding-bottom: 0.5em;
 }
-main section form .formChamps .clientContact {
+#contact section form .formChamps .clientContact {
   height: 2em;
   background-color: #ebf5ff;
   border: 1px solid rgba(41, 34, 90, 0.8901960784);
   padding: 0.3em 0.5em;
   border-radius: 5px;
 }
-main section form .formChamps #formMsg {
+#contact section form .formChamps #formMsg {
   height: 200px;
   font-family: "Barlow", sans-serif;
 }
-main section form .formChamps input::placeholder, main section form .formChamps textarea::placeholder {
+#contact section form .formChamps input::placeholder, #contact section form .formChamps textarea::placeholder {
   font-family: "Barlow", sans-serif;
   color: rgba(41, 34, 90, 0.8901960784);
   font-size: 14px;
 }
-main section form #formErreur {
+#contact section form #formErreur {
   color: crimson;
 }
-main section form .submitButton {
+#contact section form .submitButton {
   border: 0.01em solid transparent;
   display: flex;
   background-color: rgba(41, 34, 90, 0.8901960784);
@@ -301,24 +447,76 @@ main section form .submitButton {
   margin: 30px auto 0;
   font-family: "Barlow", sans-serif;
 }
-main section form .submitButton:hover {
+#contact section form .submitButton:hover {
   background-color: #f0502c;
   color: #FEFEFE;
   transform: scale(1.1);
   transition: all 0.2s ease-in-out;
   border: none;
 }
-main section[id=details] a {
+#contact section[id=details] a {
   text-decoration: none;
   color: #f0502c;
   font-weight: normal;
   font-size: 16px;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 500px) {
+  header .header-btn {
+    justify-content: center !important;
+  }
+
+  #a-propos article {
+    display: block !important;
+  }
+  #a-propos article img {
+    width: 40% !important;
+    margin: 0 0 0 15px !important;
+    float: right;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  #solutions section img {
+    max-width: 55% !important;
+  }
+}
+@media screen and (min-width: 701px) {
   header .header-btn {
     margin-top: 50px;
     max-width: 40%;
+  }
+
+  #solutions > :nth-child(odd) {
+    flex-direction: row;
+  }
+  #solutions > :nth-child(odd) img:first-of-type {
+    margin-left: 0px !important;
+  }
+  #solutions > :nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  #solutions > :nth-child(even) img:first-of-type {
+    margin-right: 0px !important;
+  }
+  #solutions section {
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: space-between;
+  }
+  #solutions section article {
+    width: 50%;
+  }
+  #solutions section div {
+    width: 50%;
+  }
+  #solutions section div :nth-child(1) {
+    width: 80% !important;
+  }
+}
+@media screen and (min-width: 1000px) {
+  header .header-btn {
+    margin-top: 50px;
+    max-width: 40% !important;
   }
   header .rs-header {
     top: -7vh !important;
@@ -331,13 +529,31 @@ main section[id=details] a {
     margin-top: 6%;
   }
 
-  section[id=details] .address-bloc {
+  #a-propos section {
+    padding: 70px 20px 0 !important;
+  }
+
+  #produits section .list-ref .list {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  #produits section .list-ref .list.col2 div {
+    width: 47%;
+  }
+  #produits section .list-ref .list.col2 div ul {
+    width: 100%;
+  }
+  #produits section .list-ref .list.col3 ul {
+    width: 30%;
+  }
+
+  #contact section[id=details] .address-bloc {
     display: flex;
     justify-content: space-between;
   }
-  section[id=details] .address-bloc div {
+  #contact section[id=details] .address-bloc div {
     width: 45%;
   }
 }
 
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=other-pages.css.map */

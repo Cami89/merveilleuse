@@ -6,7 +6,7 @@
 }
 html {
     height: -webkit-fill-available;
-  }
+}
 body {
 
     font-family: 'Barlow', sans-serif;
@@ -21,6 +21,7 @@ body {
     padding: 0;
     margin: 0;
     min-height: 100vh;
+    min-height: -webkit-fill-available;
 
     h1 {
         font-family: 'UpperEastSide';
@@ -91,18 +92,18 @@ body {
                     flex-direction: column;
                     justify-content: end;
                     align-items: center;
-                    padding-bottom: 0.15em;
                     color: $whity;
 
                     img {
-                        width: 2.3em;
+                        width: 2em;
                         display: flex;
+                        padding-bottom: 0.1em;
                     }
                 }
 
                 a p,
                 button {
-                    margin: 3px 0 0;
+                    margin: 0;
                 }
 
                 // titres d'affordance
@@ -222,7 +223,7 @@ body {
     #top-btn {
         @include top-round-btn;
         position: fixed;
-        bottom: 100px;
+        bottom: 105px;
         right: 15px;
 
         i {

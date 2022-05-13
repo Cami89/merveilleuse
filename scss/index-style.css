@@ -162,12 +162,10 @@
 }
 header .first-page {
   height: 100vh;
-  /* Use vh as a fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
 }
 header .first-page .hero-top {
-  height: 90vh;
+  height: 85vh;
   align-items: center;
 }
 header .first-page .hero-top .hero-title {
@@ -204,7 +202,7 @@ header .first-page .hero-top a {
   height: 98px;
   border-radius: 100px;
   position: relative;
-  top: -60px;
+  top: -50px;
   animation: cta-btn-anim infinite 12s;
   margin-top: -50px;
 }

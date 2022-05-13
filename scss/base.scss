@@ -206,7 +206,7 @@ body {
         @include contact-round-btn;
         position: fixed;
         right: 15px;
-        bottom: 55px;
+        bottom: 100px;
 
         p {
             margin-top: -3px;
@@ -221,7 +221,7 @@ body {
     #top-btn {
         @include top-round-btn;
         position: fixed;
-        bottom: 105px;
+        bottom: 35px;
         right: 15px;
 
         i {

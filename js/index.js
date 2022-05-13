@@ -52,3 +52,11 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+// Hauteur VH
+
+  function maFonction()
+  {
+  var w=window.innerWidth;
+  var h=window.innerHeight;
+  
+  }

@@ -52,7 +52,6 @@ $buttonBackground : #e3e2e2;
     &:hover {
         background-color: $fireOrange;
         color: $whity;
-        transform: scale(1.1);
         transition: all .2s ease-in-out;
         border: none;
     }
@@ -74,7 +73,7 @@ $buttonBackground : #e3e2e2;
     height: 65px;
     background: $mediumBlue;
     color: $whity;
-    border-radius: 5px;
+    border-radius: 3px;
     @include all-btn;
 }
 
@@ -95,6 +94,8 @@ $buttonBackground : #e3e2e2;
     background: $whity;
     @include all-btn;
     border-radius: 100px; 
+    border: 1px solid $DkBlue-trsp;
+    font-weight: 500;
 }
 
 
@@ -108,6 +109,9 @@ $buttonBackground : #e3e2e2;
     height: 55px;
     z-index: 100;
     border-radius: 100px; 
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
 @mixin top-round-btn { // Btn fixe retour au top
@@ -123,6 +127,7 @@ $buttonBackground : #e3e2e2;
     border-radius: 100px; 
     &:hover {
         z-index: 101;
+        transform: scale(1.1);
     }
 }
 

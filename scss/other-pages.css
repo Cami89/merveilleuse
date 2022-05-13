@@ -176,7 +176,7 @@ header .first-page .hero-top > img {
 header .first-page .hero-top .fairy {
   top: 70px;
   right: 0;
-  width: 10em;
+  width: 6em;
 }
 header .first-page .hero-top .header-star1 {
   width: 1em;
@@ -213,7 +213,7 @@ header .first-page .hero-top .header-btn a {
   height: 65px;
   background: #014d92;
   color: #FEFEFE;
-  border-radius: 5px;
+  border-radius: 3px;
   align-items: center;
   justify-content: center;
   box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
@@ -221,7 +221,6 @@ header .first-page .hero-top .header-btn a {
 header .first-page .hero-top .header-btn a:hover {
   background-color: #f0502c;
   color: #FEFEFE;
-  transform: scale(1.1);
   transition: all 0.2s ease-in-out;
   border: none;
 }
@@ -237,13 +236,14 @@ header .first-page .rs-header a:hover {
   transform: scale(1.1);
 }
 
-#a-propos {
+main {
   padding: 0 20px;
   margin-bottom: 130px;
 }
-#a-propos section {
-  padding-top: 70px;
+main section {
+  padding-top: 60px;
 }
+
 #a-propos section article {
   display: flex;
   flex-direction: column-reverse;
@@ -257,15 +257,6 @@ header .first-page .rs-header a:hover {
   margin: 15px 0;
 }
 
-#solutions {
-  padding: 0 20px;
-  margin-bottom: 130px;
-}
-#solutions section {
-  display: flex;
-  flex-direction: column;
-  padding-top: 75px;
-}
 #solutions section article p span {
   color: #e1d201;
   font-weight: bold;
@@ -282,12 +273,13 @@ header .first-page .rs-header a:hover {
   justify-content: center;
   box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
   border-radius: 100px;
+  border: 1px solid rgba(41, 34, 90, 0.8901960784);
+  font-weight: 500;
   text-align: center;
 }
 #solutions section article button a:hover {
   background-color: #f0502c;
   color: #FEFEFE;
-  transform: scale(1.1);
   transition: all 0.2s ease-in-out;
   border: none;
 }
@@ -302,6 +294,7 @@ header .first-page .rs-header a:hover {
 #solutions section div :nth-child(1) {
   margin: auto;
   max-width: 100%;
+  padding-top: 15px;
 }
 #solutions section div :nth-child(2) {
   width: 100px;
@@ -312,12 +305,7 @@ header .first-page .rs-header a:hover {
   margin-top: 80px;
 }
 
-#produits {
-  padding: 0 20px;
-  margin-bottom: 130px;
-}
 #produits section {
-  padding-top: 60px;
   padding-bottom: 50px;
 }
 #produits section .list-ref div {
@@ -361,31 +349,20 @@ header .first-page .rs-header a:hover {
 #produits .button-bloc a:first-of-type:hover {
   background-color: #f0502c;
   color: #FEFEFE;
-  transform: scale(1.1);
   transition: all 0.2s ease-in-out;
   border: none;
 }
 
-#enjeux {
-  padding: 0 20px;
-  margin-bottom: 130px;
-}
 #enjeux section {
-  padding-top: 60px;
   padding-bottom: 50px;
 }
 
-#realisations {
-  padding: 0 20px;
-  margin-bottom: 130px;
-}
 #realisations section {
-  padding-top: 60px;
   padding-bottom: 50px;
 }
 
 #contact section {
-  padding: 60px 20px 0;
+  padding-bottom: 50px;
 }
 #contact section .popUpError {
   display: none;
@@ -450,7 +427,6 @@ header .first-page .rs-header a:hover {
 #contact section form .submitButton:hover {
   background-color: #f0502c;
   color: #FEFEFE;
-  transform: scale(1.1);
   transition: all 0.2s ease-in-out;
   border: none;
 }
@@ -462,6 +438,9 @@ header .first-page .rs-header a:hover {
 }
 
 @media screen and (min-width: 500px) {
+  header .fairy {
+    width: 10em !important;
+  }
   header .header-btn {
     justify-content: center !important;
   }
@@ -499,6 +478,8 @@ header .first-page .rs-header a:hover {
     margin-right: 0px !important;
   }
   #solutions section {
+    display: flex;
+    flex-direction: column;
     padding-left: 30px;
     padding-right: 30px;
     justify-content: space-between;
@@ -511,6 +492,9 @@ header .first-page .rs-header a:hover {
   }
   #solutions section div :nth-child(1) {
     width: 80% !important;
+  }
+  #solutions #top-btn {
+    flex-direction: column !important;
   }
 }
 @media screen and (min-width: 1000px) {

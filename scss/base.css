@@ -165,10 +165,6 @@
   scroll-behavior: smooth;
 }
 
-html {
-  height: -webkit-fill-available;
-}
-
 body {
   font-family: "Barlow", sans-serif;
   font-size: 16px;
@@ -347,9 +343,11 @@ body .contact-bubble {
 body .contact-bubble:hover {
   background-color: #f0502c;
   color: #FEFEFE;
-  transform: scale(1.1);
   transition: all 0.2s ease-in-out;
   border: none;
+}
+body .contact-bubble:hover {
+  transform: scale(1.1);
 }
 body .contact-bubble p {
   margin-top: -3px;
@@ -378,12 +376,12 @@ body #top-btn {
 body #top-btn:hover {
   background-color: #f0502c;
   color: #FEFEFE;
-  transform: scale(1.1);
   transition: all 0.2s ease-in-out;
   border: none;
 }
 body #top-btn:hover {
   z-index: 101;
+  transform: scale(1.1);
 }
 body #top-btn i {
   padding-bottom: 3px;

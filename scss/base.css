@@ -338,7 +338,7 @@ body .contact-bubble {
   border-radius: 100px;
   position: fixed;
   right: 15px;
-  bottom: 100px;
+  bottom: 55px;
 }
 body .contact-bubble:hover {
   background-color: #f0502c;
@@ -358,7 +358,7 @@ body .contact-bubble img {
 body #top-btn {
   display: none;
   flex-direction: column;
-  z-index: 101;
+  z-index: 99;
   border: none;
   background-color: #FEFEFE;
   color: #29225a;
@@ -369,7 +369,7 @@ body #top-btn {
   box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
   border-radius: 100px;
   position: fixed;
-  bottom: 35px;
+  bottom: 105px;
   right: 15px;
 }
 body #top-btn:hover {

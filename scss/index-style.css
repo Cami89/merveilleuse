@@ -165,7 +165,7 @@ header .first-page {
   overflow: hidden;
 }
 header .first-page .hero-top {
-  height: 85vh;
+  height: 90vh;
   align-items: center;
 }
 header .first-page .hero-top .hero-title {
@@ -202,7 +202,7 @@ header .first-page .hero-top a {
   height: 98px;
   border-radius: 100px;
   position: relative;
-  top: -50px;
+  top: -60px;
   animation: cta-btn-anim infinite 12s;
   margin-top: -50px;
 }

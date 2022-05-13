@@ -115,7 +115,7 @@ $buttonBackground : #e3e2e2;
 @mixin top-round-btn { // Btn fixe retour au top
     display: none; // caché par défault
     flex-direction: column;
-    z-index: 101;
+    z-index: 99;
     border: none;
     background-color: $whity;
     color: $darkBlue;

@@ -10,7 +10,7 @@ header {
             height: 90vh;
 
             h1 {
-                margin: 50px auto 40px;
+                margin: 50px auto 15px;
             }
 
             &>img {
@@ -47,15 +47,18 @@ header {
                 left: 9em;
             }
             .header-btn {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: wrap;
-                
+                padding: 0;
+                margin: 0;
                 a {
-                    margin: 5px;
-                    padding: 5px;
-                    @include header-btn;
+                    margin: 5px 15px;
+                    padding: 0px 50px;
+                    display: flex;
+                    height: 45px;
+                    color: #FEFEFE;
+                    align-items: center;
+                    justify-content: center;
+                    text-transform: uppercase;
+                    @include link-hover;
                 }
                 
             }
@@ -151,6 +154,8 @@ main {
     }
 
     .final-img {
+        display: flex;
+        justify-content: center;
         img {
             max-width: 100%;
             margin-top: 80px;
@@ -287,8 +292,7 @@ main {
     section[id="details"] {
         a {
             text-decoration: none;
-            color: $fireOrange;
-            font-weight: normal;
+            font-weight: 500;
             font-size: 16px;
         }
     }
@@ -297,12 +301,18 @@ main {
 @media screen and (min-width:500px) {
 
     header {
+        .header-btn {
+            max-width: 70%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            a {
+                min-width: 280px;
+            }
+        }
         .fairy {
             width: 10em!important;
-        }
-        .header-btn {
-            justify-content: center!important;
-
         }
     }
 
@@ -330,12 +340,7 @@ main {
 }
 
 @media screen and (min-width:701px) {
-    header {
-        .header-btn {
-            margin-top: 50px;
-            max-width: 40%;
-        }
-    }
+
     #solutions {
         > :nth-child(odd) {
             flex-direction: row;
@@ -376,8 +381,7 @@ main {
 @media screen and (min-width:1000px) {
     header {
         .header-btn {
-            margin-top: 50px;
-            max-width: 40%!important;
+            max-width: 55%!important;
         }
         .rs-header {
             top: -7vh!important;

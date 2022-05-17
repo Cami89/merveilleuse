@@ -4,7 +4,9 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+html {
+    height: -webkit-fill-available;
+}
 body {
 
     font-family: 'Barlow', sans-serif;
@@ -149,10 +151,8 @@ body {
                         height: 4em;
 
                         .top-nav-link {
-
-                            &:hover {
-                                @include link-hover;
-                            }
+                            font-weight: 500;
+                            @include link-hover;
                         }
                     }
 
@@ -306,10 +306,12 @@ body {
                 box-shadow: none !important;
 
                 .top-nav-li {
-                    padding: 0em 0em 0em 1.3em !important;
+                    padding: 0em 0em 0em 1.8em !important;
 
                     .top-nav-link {
-                        color: $whity !important;
+                        color: $whity;
+                        @include link-hover;
+                        font-weight: normal!important;
                     }
                 }
 

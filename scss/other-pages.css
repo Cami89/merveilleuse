@@ -168,7 +168,7 @@ header .first-page .hero-top {
   height: 90vh;
 }
 header .first-page .hero-top h1 {
-  margin: 50px auto 40px;
+  margin: 50px auto 15px;
 }
 header .first-page .hero-top > img {
   position: absolute;
@@ -199,28 +199,21 @@ header .first-page .hero-top .header-star4 {
   left: 9em;
 }
 header .first-page .hero-top .header-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
 }
 header .first-page .hero-top .header-btn a {
-  margin: 5px;
-  padding: 5px;
+  margin: 5px 15px;
+  padding: 0px 50px;
   display: flex;
-  box-shadow: 0px 6px 20px 3px rgba(0, 0, 0, 0.15);
-  width: 150px;
-  height: 65px;
-  background: #014d92;
+  height: 45px;
   color: #FEFEFE;
-  border-radius: 3px;
   align-items: center;
   justify-content: center;
-  box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
+  text-transform: uppercase;
 }
 header .first-page .hero-top .header-btn a:hover {
-  background-color: #f0502c;
-  color: #FEFEFE;
+  color: #f0502c;
   transition: all 0.2s ease-in-out;
 }
 header .first-page .rs-header {
@@ -265,14 +258,14 @@ main section {
 }
 #solutions section article button a {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 150px;
   height: 42px;
   background: #FEFEFE;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.15);
   border-radius: 100px;
   font-weight: 500;
+  box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.08);
   text-align: center;
 }
 #solutions section article button a:hover {
@@ -296,6 +289,10 @@ main section {
 #solutions section div :nth-child(2) {
   width: 100px;
   margin: auto;
+}
+#solutions .final-img {
+  display: flex;
+  justify-content: center;
 }
 #solutions .final-img img {
   max-width: 100%;
@@ -427,17 +424,23 @@ main section {
 }
 #contact section[id=details] a {
   text-decoration: none;
-  color: #f0502c;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
 }
 
 @media screen and (min-width: 500px) {
+  header .header-btn {
+    max-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  header .header-btn a {
+    min-width: 280px;
+  }
   header .fairy {
     width: 10em !important;
-  }
-  header .header-btn {
-    justify-content: center !important;
   }
 
   #a-propos article {
@@ -455,11 +458,6 @@ main section {
   }
 }
 @media screen and (min-width: 701px) {
-  header .header-btn {
-    margin-top: 50px;
-    max-width: 40%;
-  }
-
   #solutions > :nth-child(odd) {
     flex-direction: row;
   }
@@ -494,8 +492,7 @@ main section {
 }
 @media screen and (min-width: 1000px) {
   header .header-btn {
-    margin-top: 50px;
-    max-width: 40% !important;
+    max-width: 55% !important;
   }
   header .rs-header {
     top: -7vh !important;

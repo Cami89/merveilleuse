@@ -36,7 +36,12 @@ $buttonBackground : #e3e2e2;
     // Effets
 
 @mixin link-hover { // effet survol liens
-    background: linear-gradient(to bottom, transparent 70%, $fireOrange 30%);
+
+    &:hover {
+        color: $fireOrange;
+        transition: all .2s ease-in-out;
+    }
+
 }
 
 @mixin bloc-shadow { // ombre elements
@@ -65,17 +70,6 @@ $buttonBackground : #e3e2e2;
     border-radius: 100px; 
 }
 
-@mixin header-btn {
-    display: flex;
-    box-shadow: 0px 6px 20px 3px rgb(0 0 0 / 15%);
-    width: 150px;
-    height: 65px;
-    background: $mediumBlue;
-    color: $whity;
-    border-radius: 3px;
-    @include all-btn;
-}
-
 @mixin blue-btn { // btn secondaire
     display: flex;
     background-color: $DkBlue-trsp;
@@ -88,12 +82,19 @@ $buttonBackground : #e3e2e2;
 
 @mixin white-btn { // btn tertiaire
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 150px;
     height: 42px;
     background: $whity;
-    @include all-btn;
     border-radius: 100px; 
     font-weight: 500;
+    box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.08);
+    &:hover {
+        background-color: $fireOrange;
+        color: $whity;
+        transition: all .2s ease-in-out;
+    }
 }
 
 
@@ -115,17 +116,22 @@ $buttonBackground : #e3e2e2;
 @mixin top-round-btn { // Btn fixe retour au top
     display: none; // caché par défault
     flex-direction: column;
+    align-items: center;
+    justify-content: center;  
     z-index: 99;
     border: none;
     background-color: $whity;
     color: $darkBlue;
     height: 55px;
     width: 55px;
-    @include all-btn;
     border-radius: 100px; 
+    box-shadow: 0px 6px 20px 3px rgba(7, 39, 44, 0.08);
     &:hover {
         z-index: 101;
         transform: scale(1.1);
+        background-color: $fireOrange;
+        color: $whity;
+        transition: all .2s ease-in-out;
     }
 }
 

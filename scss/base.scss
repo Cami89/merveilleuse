@@ -206,14 +206,10 @@ body {
         @include contact-round-btn;
         position: fixed;
         right: 15px;
-        bottom: 55px;
+        bottom: 40px;
 
         p {
             margin-top: -3px;
-            margin-bottom: 3px;
-        }
-
-        img {
             margin-bottom: 3px;
         }
     }
@@ -221,7 +217,7 @@ body {
     #top-btn {
         @include top-round-btn;
         position: fixed;
-        bottom: 105px;
+        bottom: 90px;
         right: 15px;
 
         i {
@@ -288,6 +284,13 @@ body {
 
             .nav-container {
                 width: 75% !important;
+                align-items: center!important;
+                p {
+                    display: none;
+                }
+                img {
+                    width: 2.5em!important;
+                }
             }
 
             .burger {

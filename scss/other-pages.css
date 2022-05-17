@@ -203,10 +203,9 @@ header .first-page .hero-top .header-btn {
   margin: 0;
 }
 header .first-page .hero-top .header-btn a {
-  margin: 5px 15px;
-  padding: 0px 50px;
+  margin: 8px 15px;
+  padding: 5px 50px;
   display: flex;
-  height: 45px;
   color: #FEFEFE;
   align-items: center;
   justify-content: center;
